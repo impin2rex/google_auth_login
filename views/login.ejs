@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-signin-client_id" content=""> <!-- Put Client id of your project in CONTENT field --> 
+    <meta name="google-signin-client_id" content=""> <!-- Put Client id of your project in CONTENT field -->
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <title>Login</title>
 </head>
@@ -14,7 +14,7 @@
     <!-- <a href="#" onclick="signOut();">Sign out</a> -->
     <script>
     function signOut() {
-        var auth2 = gapi.auth2.getAuthInstance();
+        const auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function () {
         console.log('User signed out.');
         });
@@ -29,10 +29,10 @@
         // console.log('Image URL: ' + profile.getImageUrl());
         // console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 
-        var id_token = googleUser.getAuthResponse().id_token;
-        // console.log(id_token);
+        const id_token = googleUser.getAuthResponse().id_token;
+        console.log(id_token);
 
-        var xhr = new XMLHttpRequest();
+        let xhr = new XMLHttpRequest();
         xhr.open('POST', '/login');
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.onload = function() {
