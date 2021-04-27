@@ -48,7 +48,7 @@ ISC
 **Free Software, Hell Yeah!**
 
    [impin2rex]: <https://github.com/impin2rex>
-   [git-repo-url]: <https://github.com/impin2rex/google-auth-login>
+   [git-repo-url]: <https://github.com/impin2rex/google_auth_login>
    [google-auth-library]: <https://www.npmjs.com/package/google-auth-library>
    [cookie-parser]: <https://www.npmjs.com/package/cookie-parser>
    [ejs]: <https://www.npmjs.com/package/ejs>
